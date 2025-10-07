@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DataController;
+use App\Http\Controllers\TamuController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,3 +21,6 @@ Route::get('/', function () {
 
 route::get('/form', [DataController::class, 'from']);
 route::post('/proses', [DataController::class, 'proses']);
+
+route::get('/datatamu', [TamuController::class, 'datatamu']);
+route::post('/hasiltamu', [TamuController::class, 'hasiltamu']);
